@@ -22,7 +22,8 @@
  * Copyright (c) 2003, 2010, Oracle and/or its affiliates. All rights reserved.
  */
 
-#if defined(_KERNEL) && defined(__amd64)
+//#if defined(_KERNEL) && defined(__amd64)
+#if 0
 #include <linux/simd_x86.h>
 
 #define	KPREEMPT_DISABLE	kfpu_begin()
@@ -75,7 +76,8 @@
  * EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
  */
 
-#if defined(__amd64)
+//#if defined(__amd64)
+#if 0
 
 /* These functions are used to execute amd64 instructions for AMD or Intel: */
 extern int rijndael_key_setup_enc_amd64(uint32_t rk[],
@@ -114,7 +116,8 @@ static int intel_aes_instructions_present(void);
 #endif
 
 
-#if !defined(__amd64)
+//#if !defined(__amd64)
+#if 1
 /*
  *  Constant tables
  */
@@ -937,7 +940,8 @@ rijndael_key_setup_enc_raw(uint32_t rk[], const uint32_t cipherKey[],
 }
 #endif	/* !__amd64 */
 
-#if defined(__amd64)
+//#if defined(__amd64)
+#if 0
 
 /*
  * Expand the 32-bit AES cipher key array into the encryption and decryption
@@ -1025,7 +1029,6 @@ rijndael_decrypt(const uint32_t rk[], int Nr, const uint32_t ct[4],
 		aes_decrypt_amd64(rk, Nr, ct, pt);
 	}
 }
-
 
 #else /* generic C implementation */
 
