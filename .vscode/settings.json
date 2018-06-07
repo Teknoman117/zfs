@@ -1,0 +1,23 @@
+{
+    "files.associations": {
+        "aes_impl.h": "c",
+        "gcm_impl.h": "c",
+        "array": "c",
+        "chrono": "c",
+        "functional": "c",
+        "istream": "c",
+        "ostream": "c",
+        "ratio": "c",
+        "tuple": "c",
+        "type_traits": "c",
+        "utility": "c",
+        "mod_compat.h": "c",
+        "module.h": "c",
+        "initializer_list": "c",
+        "string_view": "c",
+        "valarray": "c"
+    },
+    "editor.rulers": [
+        80
+    ]
+}
